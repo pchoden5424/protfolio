@@ -3,134 +3,945 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>protfolio</title>
+
+    <title>Portfolio | Passang Choden</title>
+    <link rel="shortcut icon" href="./img/lo.png" type="image/x-icon">
+
     <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
-    
+
     <!-- Navigation -->
     <nav>
-        <h2><span>P - </span>Choden</h2>
-
-       <button id="menuBtn">☰</button>
-       <button id="closeBtn">✕</button>
-
-        <div class="nav-links" id="navLinks">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+        <div class="logo">
+            <h2><span>P - </span>Choden</h2>
         </div>
+
+        <button id="menuBtn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul id="navLinks">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
-    <!-- Home -->
-    <section id="home" class="hero">
-        <div>
-            <p>Hello, I'm</p>
-            <h1>Passang Choden <i class="fa-solid fa-venus"></i></h1>
-            <h3>Student & Aspiring Web Developer</h3>
-            <p>"Driven by curiosity, inspired by technology, and passionate about digital creativity."</p>
-            <a href="#projects" class="btn">View My Projects</a>
-            <a href="#contact" class="btn outline">Contact Me</a>
+
+   <!-- Hero -->
+<section class="hero" id="home">
+
+    <div class="hero-bg">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="hero-content">
+
+        <div class="hero-text">
+
+            <p class="hero-small">
+                <span></span> HELLO, I'M
+            </p>
+
+            <h1>
+                Passang <span>Choden</span>
+            </h1>
+
+            <h2>
+                Student & <span>Web Developer</span>
+            </h2>
+
+            <p class="hero-description">
+                I create modern, creative and user-friendly digital
+                experiences through web design, coding and animation.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn primary-btn">
+                    View My Projects
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="#contact" class="btn secondary-btn">
+                    Contact Me
+                    <i class="fa-solid fa-paper-plane"></i>
+                </a>
+
+            </div>
+
+            <div class="social-icons">
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+            </div>
+
         </div>
 
-        <img src="./img/passport.png" class="profile">
-    </section>
+
+        <!-- Hero Image -->
+        <div class="hero-image">
+
+            <div class="image-glow"></div>
+
+            <div class="hero-image-box">
+
+                <img src="./img/passport.png"
+                     alt="Passang Choden">
+
+            </div>
+
+
+            <!-- Floating Cards -->
+
+            <div class="floating-card card-one">
+                <i class="fa-solid fa-code"></i>
+                <span>Web Design</span>
+            </div>
+
+            <div class="floating-card card-two">
+                <i class="fa-solid fa-lightbulb"></i>
+                <span>Creative</span>
+            </div>
+
+            <div class="floating-card card-three">
+                <i class="fa-solid fa-laptop-code"></i>
+                <span>Coding</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="scroll-down">
+
+        <i class="fa-solid fa-computer-mouse"></i>
+
+        <span>Scroll Down</span>
+
+        <i class="fa-solid fa-arrow-down"></i>
+
+    </div>
+
+</section>
+
+
+    <!-- Marquee -->
+    <div class="marquee">
+
+        <div class="marquee-content">
+
+            <span>WEB DESIGN</span>
+            <i class="fa-solid fa-star"></i>
+
+            <span>CODING</span>
+            <i class="fa-solid fa-star"></i>
+
+            <span>CREATIVITY</span>
+            <i class="fa-solid fa-star"></i>
+
+            <span>ANIMATION</span>
+            <i class="fa-solid fa-star"></i>
+
+            <span>DIGITAL SKILLS</span>
+            <i class="fa-solid fa-star"></i>
+
+            <span>WEB DESIGN</span>
+            <i class="fa-solid fa-star"></i>
+
+            <span>CODING</span>
+            <i class="fa-solid fa-star"></i>
+
+        </div>
+
+    </div>
+
 
     <!-- About -->
-    <section id="about" class="about">
+    <section class="about" id="about">
 
-        <div>
-            <h2>About Me</h2>
-            <p>I am somewho who is interested in learning new things and exploring my creativity. I enjoy coding, animation, and creating digital content. I am a hardworking and responsible person who always tries to improve my skills and achieve my goals.</p>
+        <div class="about-container">
 
-            <p><i class="fa-solid fa-location-dot"></i> Location: Thimphu</p>
-            <p><i class="fa-solid fa-graduation-cap"></i> Education: Class 12 Science</p>
-            <p><i class="fa-solid fa-heart"></i> Interests: Design, Coding, Creativity</p>
+            <div class="about-visual">
+
+                <div class="about-card">
+
+                    <div class="about-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+
+                    <h3>Creative Mind</h3>
+
+                    <p>
+                        Learning • Creating • Growing
+                    </p>
+
+                    <div class="about-circle circle-one"></div>
+                    <div class="about-circle circle-two"></div>
+
+                </div>
+
+                <div class="about-stats">
+
+                    <div class="stat">
+                        <h3>3+</h3>
+                        <p>Skills</p>
+                    </div>
+
+                    <div class="stat">
+                        <h3>5+</h3>
+                        <p>Projects</p>
+                    </div>
+
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>Passion</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <span class="section-tag">
+                    <i class="fa-solid fa-user"></i>
+                    ABOUT ME
+                </span>
+
+                <h2>
+                    Turning Ideas Into
+                    <span>Digital Experiences.</span>
+                </h2>
+
+                <p>
+                    I am Passang Choden, a student and aspiring web developer
+                    who enjoys creating modern and meaningful digital
+                    experiences.
+                </p>
+
+                <p>
+                    I am continuously learning web development, creative
+                    design and animation to improve my technical and creative
+                    skills.
+                </p>
+
+                <div class="about-info">
+
+                    <div class="info-box">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Thimphu, Bhutan</p>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <div>
+                            <h4>Education</h4>
+                            <p>Student</p>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <i class="fa-solid fa-heart"></i>
+                        <div>
+                            <h4>Interests</h4>
+                            <p>Design • Coding • Animation</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-progress">
+
+                    <div class="progress-item">
+
+                        <div class="progress-title">
+                            <span>Web Development</span>
+                            <span>85%</span>
+                        </div>
+
+                        <div class="progress-bar">
+                            <span style="width: 85%;"></span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="progress-item">
+
+                        <div class="progress-title">
+                            <span>Creative Design</span>
+                            <span>80%</span>
+                        </div>
+
+                        <div class="progress-bar">
+                            <span style="width: 80%;"></span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="progress-item">
+
+                        <div class="progress-title">
+                            <span>Animation</span>
+                            <span>70%</span>
+                        </div>
+
+                        <div class="progress-bar">
+                            <span style="width: 70%;"></span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
+
     </section>
+
 
     <!-- Skills -->
-    <section id="skills">
-        <h2>My Skills</h2>
+    <section class="skills" id="skills">
 
-        <div class="skills">
+        <div class="section-heading">
+
+            <span class="section-tag">
+                <i class="fa-solid fa-laptop-code"></i>
+                MY SKILLS
+            </span>
+
+            <h2>
+                Skills That Bring
+                <span>Ideas To Life.</span>
+            </h2>
+
+            <p>
+                I am developing my skills in web development,
+                design and creative technologies.
+            </p>
+
+        </div>
+
+
+        <div class="skills-container">
 
             <div class="skill-card">
-                <img src="./img/html.jpg">
+
+                <div class="skill-card-top">
+                    <span class="skill-number">01</span>
+
+                    <div class="skill-icon html-icon">
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+                </div>
+
                 <h3>HTML</h3>
+
+                <p>
+                    Building the structure and content of modern websites
+                    using clean HTML.
+                </p>
+
+                <div class="skill-level">
+                    <div class="skill-level-text">
+                        <span>Knowledge</span>
+                        <span>90%</span>
+                    </div>
+
+                    <div class="skill-line">
+                        <span style="width:90%;"></span>
+                    </div>
+                </div>
+
+                <div class="skill-tags">
+                    <span>Structure</span>
+                    <span>Forms</span>
+                    <span>Semantic</span>
+                </div>
+
+                <i class="fa-brands fa-html5 skill-bg-icon"></i>
+
             </div>
 
+
             <div class="skill-card">
-                <img src="./img/css.png">
+
+                <div class="skill-card-top">
+                    <span class="skill-number">02</span>
+
+                    <div class="skill-icon css-icon">
+                        <i class="fa-brands fa-css3-alt"></i>
+                    </div>
+                </div>
+
                 <h3>CSS</h3>
+
+                <p>
+                    Designing attractive, responsive and interactive
+                    website layouts.
+                </p>
+
+                <div class="skill-level">
+                    <div class="skill-level-text">
+                        <span>Knowledge</span>
+                        <span>85%</span>
+                    </div>
+
+                    <div class="skill-line">
+                        <span style="width:85%;"></span>
+                    </div>
+                </div>
+
+                <div class="skill-tags">
+                    <span>Design</span>
+                    <span>Animation</span>
+                    <span>Responsive</span>
+                </div>
+
+                <i class="fa-brands fa-css3-alt skill-bg-icon"></i>
+
             </div>
 
+
             <div class="skill-card">
-                <img src="./img/js.jpg">
+
+                <div class="skill-card-top">
+                    <span class="skill-number">03</span>
+
+                    <div class="skill-icon js-icon">
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+                </div>
+
                 <h3>JavaScript</h3>
+
+                <p>
+                    Adding interaction, functionality and dynamic features
+                    to websites.
+                </p>
+
+                <div class="skill-level">
+                    <div class="skill-level-text">
+                        <span>Knowledge</span>
+                        <span>70%</span>
+                    </div>
+
+                    <div class="skill-line">
+                        <span style="width:70%;"></span>
+                    </div>
+                </div>
+
+                <div class="skill-tags">
+                    <span>Logic</span>
+                    <span>Interaction</span>
+                    <span>DOM</span>
+                </div>
+
+                <i class="fa-brands fa-js skill-bg-icon"></i>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-card-top">
+                    <span class="skill-number">04</span>
+
+                    <div class="skill-icon design-icon">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                </div>
+
+                <h3>Creative Design</h3>
+
+                <p>
+                    Creating clean visual designs with focus on creativity
+                    and user experience.
+                </p>
+
+                <div class="skill-level">
+                    <div class="skill-level-text">
+                        <span>Knowledge</span>
+                        <span>80%</span>
+                    </div>
+
+                    <div class="skill-line">
+                        <span style="width:80%;"></span>
+                    </div>
+                </div>
+
+                <div class="skill-tags">
+                    <span>UI</span>
+                    <span>Creative</span>
+                    <span>Visual</span>
+                </div>
+
+                <i class="fa-solid fa-palette skill-bg-icon"></i>
+
             </div>
 
         </div>
+
     </section>
+
 
     <!-- Projects -->
-    <section id="projects">
-        <h2>Essential Documents</h2>
+    <section class="projects" id="projects">
 
-        <div class="projects">
+        <div class="section-heading">
 
-            <div class="card">
-                <img src="./img/online.png">
-                <h3>Personal Portfolio</h3>
-                <p>A personal website made with HTML & CSS.</p>
-                <a href="#home" class="btn">View Project <i class="fa-solid fa-diagram-project"></i></a>
+            <span class="section-tag">
+                <i class="fa-solid fa-folder-open"></i>
+                MY PROJECTS
+            </span>
+
+            <h2>
+                Things I Have
+                <span>Created.</span>
+            </h2>
+
+            <p>
+                A collection of my learning projects and creative work.
+            </p>
+
+        </div>
+
+
+        <div class="projects-container">
+
+            <div class="project-card">
+
+                <div class="project-image">
+                    <img src="./img/online.png"
+                         alt="Personal Portfolio">
+
+                    <div class="project-overlay">
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                    <span class="project-number">01</span>
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-category">
+                        WEB DEVELOPMENT
+                    </span>
+
+                    <h3>Personal Portfolio</h3>
+
+                    <p>
+                        A modern personal portfolio website created to
+                        showcase my skills, projects and creativity.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <a href="#" class="project-link">
+                        View Project
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
             </div>
 
-            <div class="card">
-                <img src="./img/cv.png">
-                <h3>Curriculum Vitae</h3>
-                <p>A concise overview of my professional profile</p>
-                <a href="#projects" class="btn">Download CV<i class="fa-solid fa-file"></i></a>
+
+            <div class="project-card">
+
+                <div class="project-image">
+                    <img src="./img/cv.png"
+                         alt="Curriculum Vitae">
+
+                    <div class="project-overlay">
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                    <span class="project-number">02</span>
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-category">
+                        DOCUMENT DESIGN
+                    </span>
+
+                    <h3>Curriculum Vitae</h3>
+
+                    <p>
+                        A professional CV designed to present education,
+                        skills, experience and achievements.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Design</span>
+                        <span>Layout</span>
+                        <span>Creative</span>
+                    </div>
+
+                    <a href="#" class="project-link">
+                        View Project
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
             </div>
 
-            <div class="card">
-                <img src="./img/certificate.jpg">
-                <h3>Certificate</h3>
-                <p> A showcase of my achievements.</p>
-                <a href="#projects" class="btn">View Certificates <i class="fa-solid fa-award"></i></a>
+
+            <div class="project-card">
+
+                <div class="project-image">
+                    <img src="./img/certificate.jpg"
+                         alt="Certificate">
+
+                    <div class="project-overlay">
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                    <span class="project-number">03</span>
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-category">
+                        ACHIEVEMENT
+                    </span>
+
+                    <h3>Certificate Collection</h3>
+
+                    <p>
+                        A digital collection that presents certificates
+                        and achievements gained through learning.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Training</span>
+                        <span>Learning</span>
+                        <span>Achievement</span>
+                    </div>
+
+                    <a href="#" class="project-link">
+                        View Project
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <div class="project-image document-project">
+
+                    <div class="document-icon">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </div>
+
+                    <div class="project-overlay">
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                    <span class="project-number">04</span>
+
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-category">
+                        DIGITAL PROJECT
+                    </span>
+
+                    <h3>Essential Documents</h3>
+
+                    <p>
+                        A simple digital project created to organize and
+                        present important documents in one place.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Digital</span>
+                        <span>Organization</span>
+                        <span>Design</span>
+                    </div>
+
+                    <a href="#" class="project-link">
+                        View Project
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
             </div>
 
         </div>
+
     </section>
+
 
     <!-- Contact -->
-    <section id="contact" class="contact">
+    <section class="contact" id="contact">
 
-        <div class="contact-info">
-            <h2>Contact Me</h2>
-            <p>Feel free to contact me. I'd love to hear from you!</p>
+        <div class="section-heading">
 
-            <p><i class="fa-solid fa-envelope"></i> Email: pchodey54@gmail.com</p>
-            <p><i class="fa-solid fa-location-dot"></i> Location: Thimphu</p>
+            <span class="section-tag">
+                <i class="fa-solid fa-paper-plane"></i>
+                CONTACT ME
+            </span>
+
+            <h2>
+                Let's Create Something
+                <span>Great Together.</span>
+            </h2>
+
+            <p>
+                Have an idea or want to connect? Feel free to send me
+                a message.
+            </p>
+
         </div>
 
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="4" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+
+                <div class="contact-intro">
+
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+
+                    <h3>Let's Talk</h3>
+
+                    <p>
+                        I am always interested in learning, creating
+                        and connecting with new people.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-box">
+
+                    <div class="contact-box-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <div>
+                        <span>Email</span>
+                        <a href="mailto:pchodey54@gmail.com">
+                            pchodey54@gmail.com
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-box">
+
+                    <div class="contact-box-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div>
+                        <span>Location</span>
+                        <p>Thimphu, Bhutan</p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-box">
+
+                    <div class="contact-box-icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+
+                    <div>
+                        <span>Availability</span>
+                        <p>Open to learning & projects</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <form class="contact-form">
+
+                <div class="input-row">
+
+                    <div class="input-group">
+                        <label>Your Name</label>
+
+                        <div class="input-box">
+                            <i class="fa-solid fa-user"></i>
+
+                            <input type="text"
+                                   placeholder="Enter your name"
+                                   required>
+                        </div>
+                    </div>
+
+
+                    <div class="input-group">
+                        <label>Your Email</label>
+
+                        <div class="input-box">
+                            <i class="fa-solid fa-envelope"></i>
+
+                            <input type="email"
+                                   placeholder="Enter your email"
+                                   required>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>Subject</label>
+
+                    <div class="input-box">
+                        <i class="fa-solid fa-pen"></i>
+
+                        <input type="text"
+                               placeholder="Enter subject"
+                               required>
+                    </div>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>Message</label>
+
+                    <div class="input-box textarea-box">
+                        <i class="fa-solid fa-message"></i>
+
+                        <textarea rows="6"
+                                  placeholder="Write your message..."
+                                  required></textarea>
+                    </div>
+
+                </div>
+
+
+                <button type="submit" class="submit-btn">
+                    Send Message
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+
+            </form>
+
+        </div>
 
     </section>
 
+
+    <!-- Footer -->
     <footer>
-        <p>Build Learn. Grow &copy; 2026 Passang Choden</p>
+
+        <div class="footer-content">
+
+            <div class="footer-logo">
+                <h2><span>P - </span>Choden</h2>
+
+                <p>
+                    Learning. Creating. Growing.
+                </p>
+            </div>
+
+
+            <div class="footer-social">
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                Build. Learn. Grow. © 2026 Passang Choden
+            </p>
+
+            <a href="#home">
+                Back to top
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+
+        </div>
+
     </footer>
 
 
-
     <script src="./js/script.js"></script>
+
 </body>
 </html>
