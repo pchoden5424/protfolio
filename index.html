@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>protfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav>
+        <h2><span>P - </span>Choden</h2>
+
+       <button id="menuBtn">☰</button>
+       <button id="closeBtn">✕</button>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="hero">
+        <div>
+            <p>Hello, I'm</p>
+            <h1>Passang Choden <i class="fa-solid fa-venus"></i></h1>
+            <h3>Student & Aspiring Web Developer</h3>
+            <p>"Driven by curiosity, inspired by technology, and passionate about digital creativity."</p>
+            <a href="#projects" class="btn">View My Projects</a>
+            <a href="#contact" class="btn outline">Contact Me</a>
+        </div>
+
+        <img src="./img/passport.png" class="profile">
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+
+        <div>
+            <h2>About Me</h2>
+            <p>I am somewho who is interested in learning new things and exploring my creativity. I enjoy coding, animation, and creating digital content. I am a hardworking and responsible person who always tries to improve my skills and achieve my goals.</p>
+
+            <p><i class="fa-solid fa-location-dot"></i> Location: Thimphu</p>
+            <p><i class="fa-solid fa-graduation-cap"></i> Education: Class 12 Science</p>
+            <p><i class="fa-solid fa-heart"></i> Interests: Design, Coding, Creativity</p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill-card">
+                <img src="./img/html.jpg">
+                <h3>HTML</h3>
+            </div>
+
+            <div class="skill-card">
+                <img src="./img/css.png">
+                <h3>CSS</h3>
+            </div>
+
+            <div class="skill-card">
+                <img src="./img/js.jpg">
+                <h3>JavaScript</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Essential Documents</h2>
+
+        <div class="projects">
+
+            <div class="card">
+                <img src="./img/online.png">
+                <h3>Personal Portfolio</h3>
+                <p>A personal website made with HTML & CSS.</p>
+                <a href="#home" class="btn">View Project <i class="fa-solid fa-diagram-project"></i></a>
+            </div>
+
+            <div class="card">
+                <img src="./img/cv.png">
+                <h3>Curriculum Vitae</h3>
+                <p>A concise overview of my professional profile</p>
+                <a href="#projects" class="btn">Download CV<i class="fa-solid fa-file"></i></a>
+            </div>
+
+            <div class="card">
+                <img src="./img/certificate.jpg">
+                <h3>Certificate</h3>
+                <p> A showcase of my achievements.</p>
+                <a href="#projects" class="btn">View Certificates <i class="fa-solid fa-award"></i></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+        <div class="contact-info">
+            <h2>Contact Me</h2>
+            <p>Feel free to contact me. I'd love to hear from you!</p>
+
+            <p><i class="fa-solid fa-envelope"></i> Email: pchodey54@gmail.com</p>
+            <p><i class="fa-solid fa-location-dot"></i> Location: Thimphu</p>
+        </div>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+    </section>
+
+    <footer>
+        <p>Build Learn. Grow &copy; 2026 Passang Choden</p>
+    </footer>
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
